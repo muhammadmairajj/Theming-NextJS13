@@ -11,7 +11,7 @@ export default function Home() {
       <Image className={styles.img2} src={code} alt='' width={100} height={100} />
       <h1 className={styles.title}>Next.js 13 <br/> Theming</h1>
       <p className={styles.description}>We will learn how to implement theming in next.js 13</p>
-      <Link href={"/portfolio"}>
+      <Link href="/portfolio">
         <button className={styles.btn}>Portfolio</button>
       </Link>
     </div>

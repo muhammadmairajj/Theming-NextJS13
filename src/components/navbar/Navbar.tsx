@@ -6,10 +6,12 @@ import { ThemeContext } from "@/context/ThemeContext";
 
 const links: any = [
   {
+    id: 1,
     title: "Home",
     url: "/",
   },
   {
+    id: 2,
     title: "Portfolio",
     url: "/portfolio",
   },
@@ -19,13 +21,13 @@ function Navbar() {
   const { theme, switchDark, switchLight } = useContext(ThemeContext);
   return (
     <div className={styles.container}>
-      <Link href={"/"} className={styles.logo}>
+      <Link href="/" className={styles.logo}>
         Programming with Mairaj
       </Link>
       <div className={styles.links}>
         {links.map((link: any) => {
           return (
-            <Link key={link.url} href={link.url} className={styles.link}>
+            <Link key={link.id} href={link.url} className={styles.link}>
               {link.title}
             </Link>
           );
