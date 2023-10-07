@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import code from "public/assets/tag.ico";
+import code from "public/assets/tag-1.png";
 import next from "public/assets/Nextjs-logo.svg.png";
 import Link from 'next/link';
 
